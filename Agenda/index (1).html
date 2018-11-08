@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Agenda de Contactos</title>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta charset="utf-8">
+      <style>
+        h3 {
+          font-size: 3.7em;
+        }
+      </style>
+    </head>
+
+    <body>
+      <nav>
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo center">Agenda</a>
+            <ul class="left hide-on-med-and-down">
+              <li><a href="Canales.php"><i class="material-icons center">public</i>Canales</a></li>
+              <li><a href="Personas.php"><i class="material-icons center">person</i>Personas</a></li>
+              <li><a href="Contactos.php"><i class="material-icons center">recent_actors</i>Contactos</a></li>
+            </ul>
+        </div>
+      </nav>
+      <section>
+        <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="img/pic1.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3 class="light grey-text text-lighten-3">Butros Asis</h3>
+        </div>
+      </li>
+      <li>
+        <img src="img/pic2.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <h3 class="light grey-text text-lighten-3">Lucas Oviedo</h3>
+        </div>
+      </li>
+      <li>
+        <img src="img/pic3.jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3 class="light grey-text text-lighten-3">Gaspar Varela</h3>
+        </div>
+      </li>
+    </ul>
+  </div>
+      </section>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script>
+        const slider = document.querySelector('.slider');
+        M.Slider.init(slider, {
+          indicators: false,
+          height: 880,
+          trainsition: 500,
+          interval:3000
+        });
+      </script>
+    </body>
+  </html>
